@@ -31,7 +31,7 @@ body {
   }
   .refresh-button span{
     position: relative;
-    top: -3px;
+    top: -5px;
   }
   .refresh-button{
     height: 30px;
@@ -450,7 +450,13 @@ header{
   }
 
   
-
+  .menu-item img {
+    display: none;
+  }
+  .menu-item.active img {
+    display: block;
+  }
+  
 
   .menu, .menu1 {
     padding: 40px 0;
@@ -546,7 +552,6 @@ header{
   display: none;
 }
 
-  
   /* INDIVIDUAL MENU ITEM */
   .menu-item {
     width: 80%;
@@ -645,3 +650,52 @@ header{
     }
   }
     
+
+
+
+  .menu-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-modal-content {
+    background:#2a2a28;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 90%;
+    width: 300px;
+    color: white ;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .menu-modal img {
+    width: 250px;
+    margin-top: 30px;
+    object-fit: cover;
+    border-radius: 8px ;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
