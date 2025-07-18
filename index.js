@@ -48,4 +48,47 @@ const menuToggle = document.getElementById("menuToggle");
       }, duration + 2500); // scroll back after a pause
     });
   });
-
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.menu-item').forEach(item => {
+      item.addEventListener('click', function () {
+        const img = this.getAttribute('data-img');
+        const name = this.getAttribute('data-name');
+        const desc = this.getAttribute('data-description');
+        const price = this.querySelector('.price')?.textContent || '';
+  
+        // Remove existing modal if any
+        const existingModal = document.getElementById('dynamicModal');
+        if (existingModal) existingModal.remove();
+  
+        // Create modal element
+        const modal = document.createElement('div');
+        modal.id = 'dynamicModal';
+        modal.className = 'menu-modal';
+        modal.innerHTML = `
+          <div class="menu-modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="${img}" alt="${name}">
+            <h3>${name}</h3>
+            <p>${desc}</p>
+            <span class="price">${price}</span>
+          </div>
+        `;
+  
+        // Append to body
+        document.body.appendChild(modal);
+  
+        // Show modal
+        modal.style.display = 'flex';
+  
+        // Close logic
+        modal.querySelector('.close-btn').addEventListener('click', () => {
+          modal.remove();
+        });
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.remove();
+        });
+      });
+    });
+  });
+  
+  
