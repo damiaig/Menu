@@ -1,363 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="style.css" rel="stylesheet">
-  <title>Home PAGE</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>D-delicacy</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
-     
 
-      
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-     
-  <div class="bg-image">
-    <div class="menu-toggle" id="menuToggle">
-        <span class="bar top"></span>
-        <span class="bar middle"></span>
-        <span class="bar bottom"></span>
-      </div>
-      <div class="fullscreen-menu" id="fullscreenMenu">
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <a class="logo" href="#">
+    <div class="logo-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M160-120q-33 0-56.5-23.5T80-200v-120h800v120q0 33-23.5 56.5T800-120H160Zm0-120v40h640v-40H160Zm320-180q-36 0-57 20t-77 20q-56 0-76-20t-56-20q-36 0-57 20t-77 20v-80q36 0 57-20t77-20q56 0 76 20t56 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 56-20t76-20q56 0 79 20t55 20v80q-56 0-75-20t-55-20q-36 0-58 20t-78 20q-56 0-77-20t-57-20ZM80-560v-40q0-115 108.5-177.5T480-840q183 0 291.5 62.5T880-600v40H80Z"/></svg>
+    </div>
+    <span class="logo-name">D<span>-</span>delicacy</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#starters">Entrées</a></li>
+    <li><a href="#main-course">Plats</a></li>
+    <li><a href="#side-dishes">Accompagnements</a></li>
+    <li><a href="#desserts">Desserts</a></li>
+    <li><a href="#beverages">Boissons</a></li>
+  </ul>
+  <div class="menu-toggle" id="menuToggle">
+    <span class="bar top"></span>
+    <span class="bar middle"></span>
+    <span class="bar bottom"></span>
+  </div>
+</header>
 
-        <nav>
-          <a href="#starters">Entrées</a>
-          <a href="#main-course">Plats</a>
-          <a href="#side-dishes">Accompagnements</a>
-          <a href="#desserts">Desserts</a>
-          <a href="#beverages">Boissons</a>
-        </nav>
-      </div>
-    <header class="transparent-header">
-        <div class="refresh-button">
-          <span><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="M160-120q-33 0-56.5-23.5T80-200v-120h800v120q0 33-23.5 56.5T800-120H160Zm0-120v40h640v-40H160Zm320-180q-36 0-57 20t-77 20q-56 0-76-20t-56-20q-36 0-57 20t-77 20v-80q36 0 57-20t77-20q56 0 76 20t56 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 56-20t76-20q56 0 79 20t55 20v80q-56 0-75-20t-55-20q-36 0-58 20t-78 20q-56 0-77-20t-57-20ZM80-560v-40q0-115 108.5-177.5T480-840q183 0 291.5 62.5T880-600v40H80Zm400-200q-124 0-207.5 31T166-640h628q-23 58-106.5 89T480-760Zm0 520Zm0-400Z"/></svg></a> </span>
-        </div>
-      
-        <nav class="nav-links" id="navLinks">
-          <a href="#starters">Entrées</a>
-          <a href="#main-course">Plats</a>
-          <a href="#side-dishes">Accompagnements</a>
-          <a href="#desserts">Desserts</a>
-          <a href="#beverages">Boissons</a>
-        </nav>
-    
-      </header>
-      
-      <!-- Move menu-toggle HERE, outside header -->
-     
-      
-      
-      <div class="hero-center">
-        <h1>Bienvenue chez D-delicacy</h1>
-        <p>Des saveurs rapides et fraîches — chaque bouchée est un régal.</p>
-        <button id="learn-more-btn" class="learn-more-btn">Voir le menu</button>
-      </div>
-      
-      
-      
+<!-- FULLSCREEN MENU -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <nav>
+    <a href="#starters"><span class="nav-num">01</span>Entrées</a>
+    <a href="#main-course"><span class="nav-num">02</span>Plats</a>
+    <a href="#side-dishes"><span class="nav-num">03</span>Accompagnements</a>
+    <a href="#desserts"><span class="nav-num">04</span>Desserts</a>
+    <a href="#beverages"><span class="nav-num">05</span>Boissons</a>
+  </nav>
 </div>
 
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Paris · Fast Food &amp; Saveurs</div>
+    <h1>Des saveurs<span class="accent">rapides,</span>inoubliables.</h1>
+    <p class="hero-sub">Chaque bouchée est un régal — des ingrédients frais, préparés avec passion, servis avec le sourire.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" id="learn-more-btn">
+        <span>Voir le menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <a class="btn-ghost" href="#contact">Nous contacter →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-bar"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
 
-
+<!-- CATEGORY STRIP -->
+<div class="cat-strip" id="catStrip">
+  <button class="cat-btn active" data-target="starters">Entrées</button>
+  <button class="cat-btn" data-target="main-course">Plats</button>
+  <button class="cat-btn" data-target="side-dishes">Accompagnements</button>
+  <button class="cat-btn" data-target="desserts">Desserts</button>
+  <button class="cat-btn" data-target="beverages">Boissons</button>
 </div>
 
-<div class="menu" id="starters">
-  <div class="menu-section-title">Entrées</div>
-  <div class="menu-scroll">
+<!-- STARTERS -->
+<section class="menu-section reveal" id="starters">
+  <div class="section-header">
+    <div>
+      <div class="section-num">01</div>
+      <h2 class="section-title">Entrées</h2>
+    </div>
+    <span class="section-count">6 plats</span>
+  </div>
+  <div class="menu-scroll" data-drag>
     <div class="menu-list">
-      <div class="menu-item" data-img="starter1.jpg" data-name="Mini Tacos Poulet" data-description="Petits tacos garnis de poulet, salade et sauce maison.">
+      <div class="menu-item" data-img="starter1.jpg" data-name="Mini Tacos Poulet" data-description="Petits tacos garnis de poulet, salade et sauce maison." data-price="€6.50" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🌮</div><span class="item-tag">Entrée</span></div>
         <h3>Mini Tacos Poulet</h3>
         <p>Petits tacos garnis de poulet, salade et sauce maison.</p>
-        <span class="price">€6.50</span>
+        <div class="item-footer"><span class="price">€6.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-
-      <div class="menu-item" data-img="starter2.jpg" data-name="Ailes de Poulet BBQ" data-description="Ailes grillées nappées de sauce BBQ épicée.">
+      <div class="menu-item" data-img="starter2.jpg" data-name="Ailes de Poulet BBQ" data-description="Ailes grillées nappées de sauce BBQ épicée." data-price="€8.50" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🍗</div><span class="item-tag">Entrée</span></div>
         <h3>Ailes de Poulet BBQ</h3>
         <p>Ailes grillées nappées de sauce BBQ épicée.</p>
-        <span class="price">€8.50</span>
+        <div class="item-footer"><span class="price">€8.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-
-      <div class="menu-item" data-img="starter3.jpg" data-name="Pain à l’ail gratiné" data-description="Tranches grillées au beurre d’ail et herbes, légèrement gratinées.">
-        <h3>Pain à l’ail gratiné</h3>
-        <p>Tranches grillées au beurre d’ail et herbes, légèrement gratinées.</p>
-        <span class="price">€4.00</span>
+      <div class="menu-item" data-img="starter3.jpg" data-name="Pain à l'ail gratiné" data-description="Tranches grillées au beurre d'ail et herbes, légèrement gratinées." data-price="€4.00" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🧄</div><span class="item-tag">Entrée</span></div>
+        <h3>Pain à l'ail gratiné</h3>
+        <p>Tranches grillées au beurre d'ail et herbes, légèrement gratinées.</p>
+        <div class="item-footer"><span class="price">€4.00</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-
-      <div class="menu-item" data-img="starter4.jpg" data-name="Nuggets de Poulet (6)" data-description="Bouchées de poulet croustillantes servies avec sauce.">
+      <div class="menu-item" data-img="starter4.jpg" data-name="Nuggets de Poulet (6)" data-description="Bouchées de poulet croustillantes servies avec sauce." data-price="€7.50" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🍟</div><span class="item-tag">Entrée</span></div>
         <h3>Nuggets de Poulet (6)</h3>
         <p>Bouchées de poulet croustillantes servies avec sauce.</p>
-        <span class="price">€7.50</span>
+        <div class="item-footer"><span class="price">€7.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-
-      <div class="menu-item" data-img="starter5.jpg" data-name="Bouchées de Camembert pané" data-description="Cœur fondant de camembert enrobé, persil et citron.">
+      <div class="menu-item" data-img="starter5.jpg" data-name="Bouchées de Camembert pané" data-description="Cœur fondant de camembert enrobé, persil et citron." data-price="€6.00" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🧀</div><span class="item-tag">Entrée</span></div>
         <h3>Bouchées de Camembert pané</h3>
         <p>Cœur fondant de camembert enrobé, persil et citron.</p>
-        <span class="price">€6.00</span>
+        <div class="item-footer"><span class="price">€6.00</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-
-      <div class="menu-item" data-img="starter6.jpg" data-name="Mini Saucisses grillées" data-description="Saucisses apéro rôties, sucré-salé légèrement épicé.">
+      <div class="menu-item" data-img="starter6.jpg" data-name="Mini Saucisses grillées" data-description="Saucisses apéro rôties, sucré-salé légèrement épicé." data-price="€5.50" data-cat="Entrée">
+        <div class="item-img-wrap"><div class="item-no-img">🌭</div><span class="item-tag">Entrée</span></div>
         <h3>Mini Saucisses grillées</h3>
         <p>Saucisses apéro rôties, sucré-salé légèrement épicé.</p>
-        <span class="price">€5.50</span>
+        <div class="item-footer"><span class="price">€5.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-
-
-<div class="menu1" id="main-course">
-  <div class="menu-section-title">Plats</div>
-  <div class="menu-scroll">
+<!-- PLATS -->
+<section class="menu-section reveal" id="main-course">
+  <div class="section-header">
+    <div>
+      <div class="section-num">02</div>
+      <h2 class="section-title">Plats</h2>
+    </div>
+    <span class="section-count">6 plats</span>
+  </div>
+  <div class="menu-scroll" data-drag>
     <div class="menu-list">
-      <div class="menu-item" data-img="main1.jpg" data-name="Burger Classique" data-description="Steak haché, cheddar, salade, tomate, sauce maison. Servi avec frites." data-price="€11.50">
+      <div class="menu-item" data-img="main1.jpg" data-name="Burger Classique" data-description="Steak haché, cheddar, salade, tomate, sauce maison. Servi avec frites." data-price="€11.50" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🍔</div><span class="item-tag">Plat</span></div>
         <h3>Burger Classique</h3>
-        <p>Steak haché, cheddar, salade, tomate, sauce maison. Servi avec frites.</p>
-        <span class="price">€11.50</span>
+        <p>Steak haché, cheddar, salade, tomate, sauce maison.</p>
+        <div class="item-footer"><span class="price">€11.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="main2.jpg" data-name="Tacos Bœuf Fromage" data-description="Grande tortilla garnie de bœuf, cheddar, crudités et sauce algérienne." data-price="€10.50">
+      <div class="menu-item" data-img="main2.jpg" data-name="Tacos Bœuf Fromage" data-description="Grande tortilla garnie de bœuf, cheddar, crudités et sauce algérienne." data-price="€10.50" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🌯</div><span class="item-tag">Plat</span></div>
         <h3>Tacos Bœuf Fromage</h3>
-        <p>Grande tortilla garnie de bœuf, cheddar, crudités et sauce algérienne.</p>
-        <span class="price">€10.50</span>
+        <p>Grande tortilla garnie de bœuf, cheddar et sauce algérienne.</p>
+        <div class="item-footer"><span class="price">€10.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="main3.jpg" data-name="Panini Poulet Mozza" data-description="Poulet rôti, mozzarella fondue et pesto dans un pain croustillant." data-price="€9.50">
+      <div class="menu-item" data-img="main3.jpg" data-name="Panini Poulet Mozza" data-description="Poulet rôti, mozzarella fondue et pesto dans un pain croustillant." data-price="€9.50" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🥪</div><span class="item-tag">Plat</span></div>
         <h3>Panini Poulet Mozza</h3>
-        <p>Poulet rôti, mozzarella fondue et pesto dans un pain croustillant.</p>
-        <span class="price">€9.50</span>
+        <p>Poulet rôti, mozzarella fondue et pesto croustillant.</p>
+        <div class="item-footer"><span class="price">€9.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="main4.jpg" data-name="Kebab Sandwich + Frites" data-description="Viande kebab, crudités, sauce blanche, servi avec frites." data-price="€10.90">
+      <div class="menu-item" data-img="main4.jpg" data-name="Kebab Sandwich + Frites" data-description="Viande kebab, crudités, sauce blanche, servi avec frites." data-price="€10.90" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🥙</div><span class="item-tag">Plat</span></div>
         <h3>Kebab Sandwich + Frites</h3>
         <p>Viande kebab, crudités, sauce blanche, servi avec frites.</p>
-        <span class="price">€10.90</span>
+        <div class="item-footer"><span class="price">€10.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="main5.jpg" data-name="Burger Poulet Croquant" data-description="Filet de poulet pané, salade, pickles, sauce miel-moutarde." data-price="€11.90">
+      <div class="menu-item" data-img="main5.jpg" data-name="Burger Poulet Croquant" data-description="Filet de poulet pané, salade, pickles, sauce miel-moutarde." data-price="€11.90" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🍗</div><span class="item-tag">Plat</span></div>
         <h3>Burger Poulet Croquant</h3>
         <p>Filet de poulet pané, salade, pickles, sauce miel-moutarde.</p>
-        <span class="price">€11.90</span>
+        <div class="item-footer"><span class="price">€11.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="main6.jpg" data-name="Wrap Falafel Veggie" data-description="Falafels croustillants, houmous, légumes frais et tahini." data-price="€9.90">
+      <div class="menu-item" data-img="main6.jpg" data-name="Wrap Falafel Veggie" data-description="Falafels croustillants, houmous, légumes frais et tahini." data-price="€9.90" data-cat="Plat">
+        <div class="item-img-wrap"><div class="item-no-img">🥗</div><span class="item-tag">Végé</span></div>
         <h3>Wrap Falafel Veggie</h3>
         <p>Falafels croustillants, houmous, légumes frais et tahini.</p>
-        <span class="price">€9.90</span>
+        <div class="item-footer"><span class="price">€9.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-
-
-
-<div class="menu" id="side-dishes">
-  <div class="menu-section-title">Accompagnements</div>
-  <div class="menu-scroll">
+<!-- ACCOMPAGNEMENTS -->
+<section class="menu-section reveal" id="side-dishes">
+  <div class="section-header">
+    <div>
+      <div class="section-num">03</div>
+      <h2 class="section-title">Accompagnements</h2>
+    </div>
+    <span class="section-count">6 plats</span>
+  </div>
+  <div class="menu-scroll" data-drag>
     <div class="menu-list">
-      <div class="menu-item" data-img="side1.jpg" data-name="Frites Maison" data-description="Pommes frites dorées et croustillantes." data-price="€3.50">
+      <div class="menu-item" data-img="side1.jpg" data-name="Frites Maison" data-description="Pommes frites dorées et croustillantes." data-price="€3.50" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🍟</div></div>
         <h3>Frites Maison</h3>
         <p>Pommes frites dorées et croustillantes.</p>
-        <span class="price">€3.50</span>
+        <div class="item-footer"><span class="price">€3.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="side2.jpg" data-name="Salade Coleslaw" data-description="Chou et carottes râpés, sauce mayonnaise légère." data-price="€2.80">
+      <div class="menu-item" data-img="side2.jpg" data-name="Salade Coleslaw" data-description="Chou et carottes râpés, sauce mayonnaise légère." data-price="€2.80" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🥗</div></div>
         <h3>Salade Coleslaw</h3>
         <p>Chou et carottes râpés, sauce mayonnaise légère.</p>
-        <span class="price">€2.80</span>
+        <div class="item-footer"><span class="price">€2.80</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="side3.jpg" data-name="Purée Onctueuse" data-description="Purée de pommes de terre au beurre et à la crème." data-price="€4.20">
+      <div class="menu-item" data-img="side3.jpg" data-name="Purée Onctueuse" data-description="Purée de pommes de terre au beurre et à la crème." data-price="€4.20" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🥔</div></div>
         <h3>Purée Onctueuse</h3>
         <p>Purée de pommes de terre au beurre et à la crème.</p>
-        <span class="price">€4.20</span>
+        <div class="item-footer"><span class="price">€4.20</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="side4.jpg" data-name="Épi de Maïs grillé" data-description="Maïs sucré grillé, beurre épicé en option." data-price="€3.90">
+      <div class="menu-item" data-img="side4.jpg" data-name="Épi de Maïs grillé" data-description="Maïs sucré grillé, beurre épicé en option." data-price="€3.90" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🌽</div></div>
         <h3>Épi de Maïs grillé</h3>
         <p>Maïs sucré grillé, beurre épicé en option.</p>
-        <span class="price">€3.90</span>
+        <div class="item-footer"><span class="price">€3.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="side5.jpg" data-name="Légumes sautés" data-description="Mélange de légumes assaisonnés, sautés au wok." data-price="€4.80">
+      <div class="menu-item" data-img="side5.jpg" data-name="Légumes sautés" data-description="Mélange de légumes assaisonnés, sautés au wok." data-price="€4.80" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🥦</div></div>
         <h3>Légumes sautés</h3>
         <p>Mélange de légumes assaisonnés, sautés au wok.</p>
-        <span class="price">€4.80</span>
+        <div class="item-footer"><span class="price">€4.80</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="side6.jpg" data-name="Potatoes épicées" data-description="Pommes de terre croustillantes en quartiers, sauce piquante." data-price="€3.90">
+      <div class="menu-item" data-img="side6.jpg" data-name="Potatoes épicées" data-description="Pommes de terre croustillantes en quartiers, sauce piquante." data-price="€3.90" data-cat="Accompagnement">
+        <div class="item-img-wrap"><div class="item-no-img">🥔</div></div>
         <h3>Potatoes épicées</h3>
         <p>Pommes de terre croustillantes en quartiers, sauce piquante.</p>
-        <span class="price">€3.90</span>
+        <div class="item-footer"><span class="price">€3.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="menu1" id="desserts">
-  <div class="menu-section-title">Desserts</div>
-  <div class="menu-scroll">
+<!-- DESSERTS -->
+<section class="menu-section reveal" id="desserts">
+  <div class="section-header">
+    <div>
+      <div class="section-num">04</div>
+      <h2 class="section-title">Desserts</h2>
+    </div>
+    <span class="section-count">6 plats</span>
+  </div>
+  <div class="menu-scroll" data-drag>
     <div class="menu-list">
-      <div class="menu-item" data-img="dessert1.jpg" data-name="Moelleux au Chocolat" data-description="Gâteau tiède au cœur fondant, servi avec crème. " data-price="€5.50">
+      <div class="menu-item" data-img="dessert1.jpg" data-name="Moelleux au Chocolat" data-description="Gâteau tiède au cœur fondant, servi avec crème." data-price="€5.50" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍫</div></div>
         <h3>Moelleux au Chocolat</h3>
-        <p>Gâteau tiède au cœur fondant, servi avec crème. </p>
-        <span class="price">€5.50</span>
+        <p>Gâteau tiède au cœur fondant, servi avec crème.</p>
+        <div class="item-footer"><span class="price">€5.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="dessert2.jpg" data-name="Trio de Glaces" data-description="Trois boules au choix, nappage au sirop." data-price="€4.80">
+      <div class="menu-item" data-img="dessert2.jpg" data-name="Trio de Glaces" data-description="Trois boules au choix, nappage au sirop." data-price="€4.80" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍨</div></div>
         <h3>Trio de Glaces</h3>
         <p>Trois boules au choix, nappage au sirop.</p>
-        <span class="price">€4.80</span>
+        <div class="item-footer"><span class="price">€4.80</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="dessert3.jpg" data-name="Salade de Fruits" data-description="Fruits de saison frais dans un léger sirop d’agrumes." data-price="€4.20">
+      <div class="menu-item" data-img="dessert3.jpg" data-name="Salade de Fruits" data-description="Fruits de saison frais dans un léger sirop d'agrumes." data-price="€4.20" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍓</div></div>
         <h3>Salade de Fruits</h3>
-        <p>Fruits de saison frais dans un léger sirop d’agrumes.</p>
-        <span class="price">€4.20</span>
+        <p>Fruits de saison frais dans un léger sirop d'agrumes.</p>
+        <div class="item-footer"><span class="price">€4.20</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="dessert4.jpg" data-name="Gâteau Banane" data-description="Cake à la banane moelleux, éclats de noix." data-price="€4.50">
+      <div class="menu-item" data-img="dessert4.jpg" data-name="Gâteau Banane" data-description="Cake à la banane moelleux, éclats de noix." data-price="€4.50" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍌</div></div>
         <h3>Gâteau Banane</h3>
         <p>Cake à la banane moelleux, éclats de noix.</p>
-        <span class="price">€4.50</span>
+        <div class="item-footer"><span class="price">€4.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="dessert5.jpg" data-name="Beignets Sucrés" data-description="Petites boules de pâte dorées, saupoudrées de sucre." data-price="€3.20">
+      <div class="menu-item" data-img="dessert5.jpg" data-name="Beignets Sucrés" data-description="Petites boules de pâte dorées, saupoudrées de sucre." data-price="€3.20" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍩</div></div>
         <h3>Beignets Sucrés</h3>
         <p>Petites boules de pâte dorées, saupoudrées de sucre.</p>
-        <span class="price">€3.20</span>
+        <div class="item-footer"><span class="price">€3.20</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="dessert6.jpg" data-name="Part de Cheesecake" data-description="Cheesecake vanille onctueux, coulis de fruits rouges." data-price="€5.90">
+      <div class="menu-item" data-img="dessert6.jpg" data-name="Part de Cheesecake" data-description="Cheesecake vanille onctueux, coulis de fruits rouges." data-price="€5.90" data-cat="Dessert">
+        <div class="item-img-wrap"><div class="item-no-img">🍰</div></div>
         <h3>Part de Cheesecake</h3>
         <p>Cheesecake vanille onctueux, coulis de fruits rouges.</p>
-        <span class="price">€5.90</span>
+        <div class="item-footer"><span class="price">€5.90</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-
-<div class="menu" id="beverages">
-  <div class="menu-section-title">Boissons</div>
-  <div class="menu-scroll">
+<!-- BOISSONS -->
+<section class="menu-section reveal" id="beverages">
+  <div class="section-header">
+    <div>
+      <div class="section-num">05</div>
+      <h2 class="section-title">Boissons</h2>
+    </div>
+    <span class="section-count">6 boissons</span>
+  </div>
+  <div class="menu-scroll" data-drag>
     <div class="menu-list">
-      <div class="menu-item" data-img="bev1.jpg" data-name="Soda Maison" data-description="Limonade grenadine-citron pétillante, façon kiosque." data-price="€3.50">
+      <div class="menu-item" data-img="bev1.jpg" data-name="Soda Maison" data-description="Limonade grenadine-citron pétillante, façon kiosque." data-price="€3.50" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">🥤</div></div>
         <h3>Soda Maison</h3>
         <p>Limonade grenadine-citron pétillante, façon kiosque.</p>
-        <span class="price">€3.50</span>
+        <div class="item-footer"><span class="price">€3.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="bev2.jpg" data-name="Hibiscus glacé" data-description="Infusion d’hibiscus (bissap) fraîche, gingembre léger." data-price="€3.20">
+      <div class="menu-item" data-img="bev2.jpg" data-name="Hibiscus glacé" data-description="Infusion d'hibiscus (bissap) fraîche, gingembre léger." data-price="€3.20" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">🌺</div></div>
         <h3>Hibiscus glacé</h3>
-        <p>Infusion d’hibiscus (bissap) fraîche, gingembre léger.</p>
-        <span class="price">€3.20</span>
+        <p>Infusion d'hibiscus fraîche, gingembre léger.</p>
+        <div class="item-footer"><span class="price">€3.20</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="bev3.jpg" data-name="Limonade Maison" data-description="Citron pressé, menthe et miel, bien frais." data-price="€3.80">
+      <div class="menu-item" data-img="bev3.jpg" data-name="Limonade Maison" data-description="Citron pressé, menthe et miel, bien frais." data-price="€3.80" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">🍋</div></div>
         <h3>Limonade Maison</h3>
         <p>Citron pressé, menthe et miel, bien frais.</p>
-        <span class="price">€3.80</span>
+        <div class="item-footer"><span class="price">€3.80</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="bev4.jpg" data-name="Milkshake" data-description="Milkshake vanille ou chocolat, chantilly en topping." data-price="€5.00">
+      <div class="menu-item" data-img="bev4.jpg" data-name="Milkshake" data-description="Milkshake vanille ou chocolat, chantilly en topping." data-price="€5.00" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">🥛</div></div>
         <h3>Milkshake</h3>
         <p>Milkshake vanille ou chocolat, chantilly en topping.</p>
-        <span class="price">€5.00</span>
+        <div class="item-footer"><span class="price">€5.00</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="bev5.jpg" data-name="Eau Minérale" data-description="Eau minérale fraîche (75 cl)." data-price="€1.50">
+      <div class="menu-item" data-img="bev5.jpg" data-name="Eau Minérale" data-description="Eau minérale fraîche (75 cl)." data-price="€1.50" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">💧</div></div>
         <h3>Eau Minérale</h3>
         <p>Eau minérale fraîche (75 cl).</p>
-        <span class="price">€1.50</span>
+        <div class="item-footer"><span class="price">€1.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
-      <div class="menu-item" data-img="bev6.jpg" data-name="Smoothie Tropical" data-description="Banane, ananas et yaourt mixés minute." data-price="€5.50">
+      <div class="menu-item" data-img="bev6.jpg" data-name="Smoothie Tropical" data-description="Banane, ananas et yaourt mixés minute." data-price="€5.50" data-cat="Boisson">
+        <div class="item-img-wrap"><div class="item-no-img">🍹</div></div>
         <h3>Smoothie Tropical</h3>
         <p>Banane, ananas et yaourt mixés minute.</p>
-        <span class="price">€5.50</span>
+        <div class="item-footer"><span class="price">€5.50</span><div class="item-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modal">
+  <div class="modal-card" id="modalCard">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalImgWrap"></div>
+    <div class="modal-body">
+      <div class="modal-cat" id="modalCat"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-price" id="modalPrice"></div>
     </div>
   </div>
 </div>
 
-    
-
-<div class="contact" id="contact">
-  <div class="contact-content">
-    <h2>Contactez-nous</h2>
-    <p>Nous serions ravis d’avoir de vos nouvelles. N’hésitez pas à nous contacter via les informations ci-dessous.</p>
-    
-    <div class="contact-details">
-      <p><strong>Téléphone :</strong> <a href="tel:+33758743864">+33 758 74 38 64</a></p>
-      <p><strong>Email :</strong> <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+<!-- CONTACT -->
+<section class="contact-section reveal" id="contact">
+  <div class="contact-label">Contactez-nous</div>
+  <h2>On est là<br>pour vous.</h2>
+  <p>Nous serions ravis d'avoir de vos nouvelles. N'hésitez pas à nous contacter.</p>
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="contact-card-label">Téléphone</div>
+      <a href="tel:+33758743864">+33 7 58 74 38 64</a>
     </div>
-    
+    <div class="contact-card">
+      <div class="contact-card-label">Email</div>
+      <a href="mailto:example@gmail.com">example@gmail.com</a>
+    </div>
   </div>
-</div>
+</section>
 
-    
-<footer class="custom-footer">
-  <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffb347"><path d="M160-120q-33 0-56.5-23.5T80-200v-120h800v120q0 33-23.5 56.5T800-120H160Zm0-120v40h640v-40H160Zm320-180q-36 0-57 20t-77 20q-56 0-76-20t-56-20q-36 0-57 20t-77 20v-80q36 0 57-20t77-20q56 0 76 20t56 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 56-20t76-20q56 0 79 20t55 20v80q-56 0-75-20t-55-20q-36 0-58 20t-78 20q-56 0-77-20t-57-20ZM80-560v-40q0-115 108.5-177.5T480-840q183 0 291.5 62.5T880-600v40H80Zm400-200q-124 0-207.5 31T166-640h628q-23 58-106.5 89T480-760Zm0 520Zm0-400Z"/></svg>
-          <span>D-delicacy</span>
-        </a>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <a class="footer-logo" href="#">
+      <div class="logo-icon" style="width:30px;height:30px;border-radius:6px;background:var(--orange);display:flex;align-items:center;justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#fff"><path d="M160-120q-33 0-56.5-23.5T80-200v-120h800v120q0 33-23.5 56.5T800-120H160Zm0-120v40h640v-40H160Zm320-180q-36 0-57 20t-77 20q-56 0-76-20t-56-20q-36 0-57 20t-77 20v-80q36 0 57-20t77-20q56 0 76 20t56 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 56-20t76-20q56 0 79 20t55 20v80q-56 0-75-20t-55-20q-36 0-58 20t-78 20q-56 0-77-20t-57-20ZM80-560v-40q0-115 108.5-177.5T480-840q183 0 291.5 62.5T880-600v40H80Z"/></svg>
       </div>
-
-      <div class="footer-links">
-        <div>
-          <h2>Resources</h2>
-          <ul>
-            <li><a href="https://flowbite.com/" target="_blank">Flowbite</a></li>
-            <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2>Suivez-nous</h2>
-
-          <ul>
-            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://tiktok.com/" target="_blank">Tik Tok</a></li>
-          </ul>
-        </div>
-
-     
+      D<span class="dot">-</span>delicacy
+    </a>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>Ressources</h3>
+        <ul>
+          <li><a href="https://flowbite.com/" target="_blank">Flowbite</a></li>
+          <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Suivez-nous</h3>
+        <ul>
+          <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://tiktok.com/" target="_blank">TikTok</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <span>© 2025 Censura™. Tous droits réservés.</span>
-
-      <div class="footer-socials">
-        <!-- Social Icons -->
-     <!-- WhatsApp -->
-
-
-<!-- Discord -->
-
-
-<!-- Instagram -->
-<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-<svg class="insta" xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" fill="currentCollor" viewBox="0 0 24 24">
-<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg>
-</a>
-
-<!-- X (Twitter New Logo) -->
-<a href="https://x.com" target="_blank" rel="noopener noreferrer">
-<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24">
-<path d="M17.688 3H21l-7.688 8.844L22 21h-7l-4.844-5.344L5.312 21H2l8.156-9.406L2 3h7l4.219 4.656L17.688 3z"/>
-</svg>
-</a>
-
-<!-- Telegram -->
-<a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
-<svg class="skolo" xmlns="http://www.w3.org/2000/svg"  fill="black" viewBox="0 0 24 24">
-  <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-</svg>
-</a>
-</div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 D-delicacy™ · Tous droits réservés.</span>
+    <div class="footer-socials">
+      <a class="social-btn" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+      </a>
+      <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <svg viewBox="0 0 24 24"><path d="M17.688 3H21l-7.688 8.844L22 21h-7l-4.844-5.344L5.312 21H2l8.156-9.406L2 3h7l4.219 4.656L17.688 3z"/></svg>
+      </a>
     </div>
   </div>
 </footer>
 
-    <script src="index.js"> </script>
-    <script>
-      // Block Ctrl + Scroll and pinch zoom
-      document.addEventListener('wheel', function (e) {
-        if (e.ctrlKey) e.preventDefault();
-      }, { passive: false });
-  
-      document.addEventListener('gesturestart', function (e) {
-        e.preventDefault();
-      });
-    </script>
+<script src="index.js">
+</script>
 </body>
 </html>
